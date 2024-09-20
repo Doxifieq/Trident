@@ -4,3 +4,6 @@ main: org.minecraft.trident.Trident
 api-version: '1.20'
 load: STARTUP
 authors: [ doxifieq ]
+commands:
+  fly:
+    description: Toggles you or <player>'s flight mode.
