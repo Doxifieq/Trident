@@ -1,0 +1,47 @@
+name: Trident
+version: '1.0-SNAPSHOT'
+main: org.minecraft.trident.Trident
+api-version: '1.20'
+load: STARTUP
+authors: [ doxifieq ]
+commands:
+  fly:
+    permission: trident.fly
+    description: Toggle your flight mode for you or <player>
+
+  gamemode:
+    permission: trident.gamemode
+    description: Switch your game mode for you or <player>
+    aliases:
+      - gm
+
+  vanish:
+    permission: trident.vanish
+    description: Toggle your visibility to other players
+    aliases:
+      - v
+
+  heal:
+    permission: trident.heal
+    description: Heals you or <player>
+
+  feed:
+    permission: trident.feed
+    description: Feeds you or <player>
+
+  teleport:
+    permission: trident.teleport
+    description: Teleports you to <player> or <player> to <player 2>
+    aliases:
+      - tp
+
+  tphere:
+    permission: trident.tphere
+    description: Teleports <player> to you
+    aliases:
+      - tphere
+      - tph
+
+  sethearts:
+    permission: trident.sethearts
+    description: Set hearts of <player> to <int>
