@@ -1,17 +1,26 @@
 package org.minecraft.trident;
 
 import org.bukkit.plugin.java.JavaPlugin;
+import org.minecraft.trident.modules.CommandModule;
+
+import java.util.HashMap;
 
 public final class Trident extends JavaPlugin {
+    public static Trident INSTANCE;
+
+    public static HashMap<String, CommandModule> COMMANDS;
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
+        INSTANCE = this;
 
+        COMMANDS = new HashMap<>();
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        INSTANCE = null;
+
+        COMMANDS.clear();
     }
 }
