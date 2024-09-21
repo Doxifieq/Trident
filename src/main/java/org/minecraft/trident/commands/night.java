@@ -7,7 +7,7 @@ import org.bukkit.ChatColor;
 import org.minecraft.trident.modules.CommandModule;
 
 public class night extends CommandModule {
-    private final static String NIGHT_MESSAGE = ChatColor.translateAlternateColorCodes('&', "&6ⓘ &7| &Set time to &f13000");
+    private final static String NIGHT_MESSAGE = ChatColor.translateAlternateColorCodes('&', "&6ⓘ &7| &eSet time to &f13000");
 
     public night() {
         super("night", 0, 0);
@@ -16,7 +16,7 @@ public class night extends CommandModule {
     @Override
     public void run(CommandSender sender, String[] args) {
         if (sender instanceof Player player) {
-            player.getWorld().setTime(1000);
+            player.getWorld().setTime(13000);
 
             player.sendMessage(NIGHT_MESSAGE);
         }

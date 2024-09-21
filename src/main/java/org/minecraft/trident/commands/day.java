@@ -7,7 +7,7 @@ import org.bukkit.ChatColor;
 import org.minecraft.trident.modules.CommandModule;
 
 public class day extends CommandModule {
-    private final static String DAY_MESSAGE = ChatColor.translateAlternateColorCodes('&', "&6ⓘ &7| &Set time to &f1000");
+    private final static String DAY_MESSAGE = ChatColor.translateAlternateColorCodes('&', "&6ⓘ &7| &eSet time to &f1000");
 
     public day() {
         super("day", 0, 0);
