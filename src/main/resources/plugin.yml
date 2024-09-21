@@ -7,3 +7,37 @@ authors: [ doxifieq ]
 commands:
   fly:
     description: Toggles you or <player>'s flight mode.
+    permission: trident.fly
+
+  gamemode:
+    description: Switches your game mode between creative and survival.
+    permission: trident.gamemode
+    aliases:
+      - gm
+
+  teleport:
+    description: Teleport you to <player> or <player> to <player 2>
+    permission: trident.teleport
+    aliases:
+      - tp
+
+  tphere:
+    description: Teleport <player> to you
+    permission: trident.tphere
+    aliases:
+      - tph
+
+  clearinventory:
+    description: Clear the inventory of you or <player>
+    permission: trident.clearinventory
+    aliases:
+      - clearinv
+      - ci
+
+  feed:
+    description: Feeds you or <player>
+    permission: trident.feed
+
+  heal:
+    description: Heals you or <player>
+    permission: trident.heal

@@ -1,8 +1,9 @@
 package org.minecraft.trident;
 
 import org.bukkit.plugin.java.JavaPlugin;
-import org.minecraft.trident.commands.Fly;
+
 import org.minecraft.trident.modules.CommandModule;
+import org.minecraft.trident.commands.*;
 
 import java.util.HashMap;
 
@@ -28,6 +29,12 @@ public final class Trident extends JavaPlugin {
     }
 
     private void registerCommands() {
-        new Fly();
+        new clearinventory();
+        new gamemode();
+        new teleport();
+        new tphere();
+        new heal();
+        new feed();
+        new fly();
     }
 }

@@ -9,7 +9,7 @@ import org.minecraft.trident.modules.CommandModule;
 import org.minecraft.trident.Trident;
 
 public class CommandHandler implements CommandExecutor {
-    private final String INVALID_ARGUMENTS_MESSAGE = ChatColor.translateAlternateColorCodes('&', "&cInvalid arguments for &f/%s&c.");
+    private final String INVALID_ARGUMENTS_MESSAGE = ChatColor.translateAlternateColorCodes('&', "&4⚠ &7| &cInvalid arguments for &f/%s");
 
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         final String commandName = command.getName();
