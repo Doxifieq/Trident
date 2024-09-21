@@ -33,8 +33,12 @@ public final class Trident extends JavaPlugin {
         new gamemode();
         new teleport();
         new tphere();
+        new night();
         new heal();
         new feed();
+        new give();
+        new item();
         new fly();
+        new day();
     }
 }

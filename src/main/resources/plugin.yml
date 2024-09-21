@@ -41,3 +41,21 @@ commands:
   heal:
     description: Heals you or <player>
     permission: trident.heal
+
+  give:
+    description: Gives <player> <amount> of <item>
+    permission: trident.give
+
+  item:
+    description: Gives you <amount> of <item>
+    permission: trident.item
+    aliases:
+      - i
+
+  day:
+    description: Set time to 1000
+    permission: trident.time
+
+  night:
+    description: Set time to 13000
+    permission: trident.time
