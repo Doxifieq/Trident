@@ -8,9 +8,13 @@ import org.bukkit.Bukkit;
 import org.minecraft.trident.modules.CommandModule;
 import org.minecraft.trident.Trident;
 
+import java.util.HashMap;
+
 public class tpa extends CommandModule {
     private static final String REQUEST_RECEIVED_MESSAGE = ChatColor.translateAlternateColorCodes('&', "&6ⓘ &7| &eReceived teleport request from &f%s\n &7- &eThis request will expire in &f30 &eseconds\n&0\n &7- &f/tpaccept &eto accept the request\n &7- &f/tpdeny &eto deny the request");
     private static final String REQUEST_SENT_MESSAGE = ChatColor.translateAlternateColorCodes('&', "&6ⓘ &7| &eTeleport request sent to &f%s");
+
+    private static final HashMap<Player, Player> TPA_REQUESTS = Trident.TPA_REQUESTS;
 
     public tpa() {
         super("tpa", 1, 1);
@@ -22,7 +26,7 @@ public class tpa extends CommandModule {
             final Player target = Bukkit.getPlayer(args[0]);
 
             if (target != null) {
-                Trident.TPA_REQUESTS.put(player, target);
+                TPA_REQUESTS.put(player, target);
 
                 target.sendMessage(String.format(REQUEST_RECEIVED_MESSAGE, player.getName()));
                 player.sendMessage(String.format(REQUEST_SENT_MESSAGE, target.getName()));
