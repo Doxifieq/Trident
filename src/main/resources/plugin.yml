@@ -59,3 +59,12 @@ commands:
   night:
     description: Set time to 13000
     permission: trident.time
+
+  tpa:
+    description: Send a teleport request to <player>
+
+  tpaccept:
+    description: Accepts all pending teleport requests
+
+  tpdeny:
+    description: Denies all pending teleport requests
