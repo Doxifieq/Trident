@@ -60,6 +60,12 @@ commands:
     description: Set time to 13000
     permission: trident.time
 
+  vanish:
+    description: Toggle your own visibility towards other players
+    permission: trident.vanish
+    aliases:
+      - v
+
   tpa:
     description: Send a teleport request to <player>
 

@@ -5,6 +5,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import org.minecraft.trident.modules.CommandModule;
 import org.minecraft.trident.commands.*;
+import org.minecraft.trident.events.*;
 
 import java.util.HashMap;
 
@@ -22,6 +23,7 @@ public final class Trident extends JavaPlugin {
         TPA_REQUESTS = new HashMap<>();
 
         registerCommands();
+        registerEvents();
     }
 
     @Override
@@ -38,6 +40,7 @@ public final class Trident extends JavaPlugin {
         new teleport();
         new tpdeny();
         new tphere();
+        new vanish();
         new night();
         new heal();
         new feed();
@@ -46,5 +49,10 @@ public final class Trident extends JavaPlugin {
         new fly();
         new day();
         new tpa();
+    }
+
+    private void registerEvents() {
+        new PlayerJoinEventListener();
+        new PlayerQuitEventListener();
     }
 }

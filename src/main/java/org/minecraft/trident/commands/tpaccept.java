@@ -14,6 +14,7 @@ import java.util.Map;
 
 public class tpaccept extends CommandModule {
     private static final String REQUEST_ACCEPTED_MESSAGE = ChatColor.translateAlternateColorCodes('&', "&6ⓘ &7| &eYour teleport request to &f%s &ehas been accepted");
+    private static final String ACCEPT_REQUESTS_MESSAGE = ChatColor.translateAlternateColorCodes('&', "&6ⓘ &7| &eAccepted all incoming teleport requests");
 
     private final static String NO_INCOMING_REQUESTS_MESSAGE = ChatColor.translateAlternateColorCodes('&', "&4⚠ &7| &cNo incoming teleport requests");
 
@@ -39,6 +40,8 @@ public class tpaccept extends CommandModule {
 
             Trident.TPA_REQUESTS.remove(p);
         }
+
+        player.sendMessage(ACCEPT_REQUESTS_MESSAGE);
     }
 
     public tpaccept() {
