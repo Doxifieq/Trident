@@ -9,10 +9,8 @@ import org.minecraft.trident.commands.*;
 import org.minecraft.trident.events.*;
 
 import java.util.HashMap;
-import java.io.File;
 
 public final class Trident extends JavaPlugin {
-    public static File DATA_FOLDER;
     public static Trident INSTANCE;
 
     public static HashMap<String, CommandModule> COMMANDS;
