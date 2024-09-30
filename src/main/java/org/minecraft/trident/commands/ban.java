@@ -1,11 +1,11 @@
 package org.minecraft.trident.commands;
 
+import org.bukkit.command.CommandSender;
+import org.bukkit.OfflinePlayer;
+import org.bukkit.entity.Player;
+import org.bukkit.ChatColor;
 import org.bukkit.BanList;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.OfflinePlayer;
-import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
 
 import org.minecraft.trident.modules.CommandModule;
 

@@ -1,9 +1,9 @@
 package org.minecraft.trident.commands;
 
-import org.bukkit.ChatColor;
-import org.bukkit.Location;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.ChatColor;
+import org.bukkit.Location;
 
 import org.minecraft.trident.helpers.DataHelper;
 import org.minecraft.trident.modules.CommandModule;
