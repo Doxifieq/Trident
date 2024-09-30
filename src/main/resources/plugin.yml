@@ -66,6 +66,14 @@ commands:
     aliases:
       - v
 
+  kick:
+    description: Kicks <player> for <reason?>
+    permission: trident.kick
+
+  ban:
+    description: Bans <player> for <reason?>
+    permission: trident.ban
+
   tpa:
     description: Send a teleport request to <player>
 
@@ -74,3 +82,9 @@ commands:
 
   tpdeny:
     description: Denies all pending teleport requests
+
+  sethome:
+    description: Sets your home to your current location
+
+  home:
+    description: Teleports you to your home

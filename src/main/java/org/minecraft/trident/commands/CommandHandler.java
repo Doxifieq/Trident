@@ -17,7 +17,7 @@ public class CommandHandler implements CommandExecutor {
         if (Trident.COMMANDS.containsKey(commandName)) {
             CommandModule commandModule = Trident.COMMANDS.get(commandName);
 
-            if (args.length >= commandModule.minArgs && args.length <= commandModule.maxArgs) {
+            if (args.length >= commandModule.minArgs && (args.length <= commandModule.maxArgs || commandModule.maxArgs == -1)) {
                 commandModule.run(sender, args);
             } else {
                 sender.sendMessage(String.format(INVALID_ARGUMENTS_MESSAGE, commandName));

@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 public class tpdeny extends CommandModule {
-    private static final String REQUEST_DENIED_MESSAGE = ChatColor.translateAlternateColorCodes('&', "&6ⓘ &7| &eYour teleport request to &f%s &ehas been denied");
+    private static final String REQUEST_DENIED_MESSAGE = ChatColor.translateAlternateColorCodes('&', "&6ⓘ &7| &eThe teleport request to &f%s &ehas been denied");
     private static final String DENY_REQUESTS_MESSAGE = ChatColor.translateAlternateColorCodes('&', "&6ⓘ &7| &eDenied all incoming teleport requests");
 
     private final static String NO_INCOMING_REQUESTS_MESSAGE = ChatColor.translateAlternateColorCodes('&', "&4⚠ &7| &cNo incoming teleport requests");

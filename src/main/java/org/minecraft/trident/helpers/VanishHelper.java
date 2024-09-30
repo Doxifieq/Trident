@@ -31,7 +31,7 @@ public class VanishHelper {
         }
     }
 
-    public void removePlayerFromVanishedList(Player player) {
+    public void removePlayerFromVanishedPlayersList(Player player) {
         VANISHED_PLAYERS.remove(player);
     }
 

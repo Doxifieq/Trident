@@ -19,6 +19,6 @@ public class PlayerQuitEventListener implements Listener {
     public void onPlayerQuitEvent(PlayerQuitEvent event) {
         final Player player = event.getPlayer();
 
-        VanishHelper.getInstance().removePlayerFromVanishedList(player);
+        VanishHelper.getInstance().removePlayerFromVanishedPlayersList(player);
     }
 }
