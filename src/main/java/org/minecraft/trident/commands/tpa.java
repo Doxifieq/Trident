@@ -6,8 +6,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.ChatColor;
 import org.bukkit.Bukkit;
 
-import org.minecraft.trident.helpers.VanishHelper;
 import org.minecraft.trident.modules.CommandModule;
+import org.minecraft.trident.helpers.VanishHelper;
 import org.minecraft.trident.Trident;
 
 import java.util.HashMap;

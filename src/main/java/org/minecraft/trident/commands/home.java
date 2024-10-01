@@ -5,8 +5,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 
-import org.minecraft.trident.helpers.DataHelper;
 import org.minecraft.trident.modules.CommandModule;
+import org.minecraft.trident.helpers.DataHelper;
 
 public class home extends CommandModule {
     private static final String TELEPORT_MESSAGE = ChatColor.translateAlternateColorCodes('&', "&6ⓘ &7| &eTeleporting...");
