@@ -11,7 +11,7 @@ import org.minecraft.trident.modules.CommandModule;
 public class home extends CommandModule {
     private static final String TELEPORT_MESSAGE = ChatColor.translateAlternateColorCodes('&', "&6ⓘ &7| &eTeleporting...");
 
-    private static final String NO_HOME_MESSAGE = ChatColor.translateAlternateColorCodes('&', "&4⚠ &7| &cYou do not have a home set, set one with &f/sethome");
+    private static final String NO_HOME_MESSAGE = ChatColor.translateAlternateColorCodes('&', "&4⚠ &7| &cYou do not have a home set, create one with &f/sethome");
 
     public home() {
         super("home", 0, 0);
