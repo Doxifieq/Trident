@@ -15,7 +15,6 @@ import java.io.File;
 public class DataHelper {
     private static DataHelper INSTANCE = null;
 
-
     private final File configFile = new File(Trident.INSTANCE.getDataFolder(), "data.yml");
     private final FileConfiguration config = YamlConfiguration.loadConfiguration(configFile);
 
